@@ -1,38 +1,68 @@
-# CFI Decoder
+# 🔍 CFI Code Decoder
 
-**CFIDecoder** is a Python utility for decoding CFI (Classification of Financial Instruments) codes according to the ISO 10962 standard. A CFI code is a six-character string that classifies financial instruments based on their characteristics, such as category, group, and specific attributes.
+This Python package provides a decoder for **CFI codes** based on the ISO 10962 standard. It translates 6-character CFI codes into human-readable descriptions of financial instruments.
 
 ---
 
-## 📦 Features
+## 📘 What is a CFI Code?
 
-- Decodes 6-character CFI codes
-- Interprets:
-  - **Category** (1st character)
-  - **Group** (2nd character, dependent on Category)
-  - **Attributes** (3rd to 6th characters, optionally decoded using provided mappings)
-- Handles unknown or unmapped characters gracefully
-- Based on ISO 10962 standard
+A **CFI (Classification of Financial Instruments)** code is a 6-character identifier used to classify financial instruments.
+
+- The **first character** indicates the *category* (e.g. equity, debt).
+- The **second character** indicates the *group* (e.g. common shares, bonds).
+- The **remaining four characters** describe specific *attributes* such as voting rights, payment status, interest type, and more — depending on the instrument type.
 
 ---
 
 ## 🧠 How It Works
 
-The `CFIDecoder` relies on three mapping dictionaries:
+The decoder uses three core mappings:
 
-- `CATEGORY_MAP`: Maps the first character to a high-level asset class (e.g., Equities, Bonds)
-- `GROUP_MAP`: Maps the second character (contextual to the category) to subtypes
-- `ATTRIBUTE_MAP`: Nested mappings for decoding characters 3 to 6, specific to a (category, group) tuple
+- `CATEGORY_MAP`: maps the first character to a category.
+- `GROUP_MAP`: maps the second character to a group, depending on the category.
+- `ATTRIBUTE_MAP`: provides mappings for the last 4 characters, specific to (category, group) combinations.
 
-These mappings must be provided externally via a `map.py` module.
+If a detailed mapping for a category/group is not available, the raw character values will be returned with `null` attribute names.
 
 ---
 
-## 🔧 Usage
+## ✅ Example Usage
 
 ```python
-from cfidecoder import CFIDecoder
+from cfi_code import Decoder
 
-decoder = CFIDecoder()
-result = decoder.decode("SCBCCA")
+decoder = Decoder()
+
+result = decoder.decode("ESVUFR")
 print(result)
+```
+
+## ➡️ Example Output
+```json 
+{
+  "category": "equity",
+  "group": "common/ordinary shares",
+  "attributes": [
+    {
+      "position": 3,
+      "name": "voting_right",
+      "value": "voting"
+    },
+    {
+      "position": 4,
+      "name": "ownership",
+      "value": "free"
+    },
+    {
+      "position": 5,
+      "name": "payment_status",
+      "value": "fully paid"
+    },
+    {
+      "position": 6,
+      "name": "form",
+      "value": "registered"
+    }
+  ]
+}
+```

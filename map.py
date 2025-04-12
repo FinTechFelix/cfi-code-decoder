@@ -12,7 +12,7 @@ CATEGORY_MAP = {
         'K': 'Strategies',
         'L': 'Financing',
         'T': 'Reference instruments',
-        'M': 'Others (miscellaneous)',
+        'M': 'Others',
     }
 
 GROUP_MAP = {
@@ -24,7 +24,7 @@ GROUP_MAP = {
             'L': "Limited partnership units",
             'D': "Depositary receipts on equities",
             'Y': "Structured instruments (participation)",
-            'M': "Others (miscellaneous)",
+            'M': "Others",
         },
         'C': {
             'I': "Standard (vanilla) investment funds/mutual funds",
@@ -34,7 +34,7 @@ GROUP_MAP = {
             'S': "Pension funds",
             'F': "Funds of funds",
             'P': "Private equity funds",
-            'M': "Others (miscellaneous)",
+            'M': "Others",
         },
         'D': {
             'B': "Bonds",
@@ -47,7 +47,7 @@ GROUP_MAP = {
             'A': "Asset-backed securities",
             'N': "Municipal bonds",
             'D': "Depositary receipts on debt instruments",
-            'M': "Other (miscellaneous)",
+            'M': "Other",
             'Y': "Money Market Instruments",
         },
         'R': {
@@ -57,12 +57,12 @@ GROUP_MAP = {
             'W': "Warrants",
             'F': "Mini-future certificates/constant leverage certificates",
             'D': "Depositary receipts on entitlements",
-            'M': "Other (miscellaneous)",
+            'M': "Other",
         },
         'O': {
             'C': "Call options",
             'P': "Put options",
-            'M': "Other (miscellaneous)",
+            'M': "Other",
         },
         'F': {
             'F': "Financial futures",
@@ -74,7 +74,7 @@ GROUP_MAP = {
             'E': "Equity",
             'C': "Credit",
             'F': "Foreign exchange",
-            'M': "Other (miscellaneous)",
+            'M': "Other",
         },
         'H': {
             'R': "Rates",
@@ -82,7 +82,7 @@ GROUP_MAP = {
             'E': "Equity",
             'C': "Credit",
             'F': "Foreign exchange",
-            'M': "Other (miscellaneous)",
+            'M': "Other",
         },
         'I': {
             'F': "Foreign exchange",
@@ -102,7 +102,7 @@ GROUP_MAP = {
             'C': "Credit",
             'F': "Foreign exchange",
             'Y': "Mixed assets",
-            'M': "Other (miscellaneous)",
+            'M': "Other",
         },
         'L': {
             'L': "Loan-lease",
@@ -116,7 +116,7 @@ GROUP_MAP = {
             'I': "Indices",
             'B': "Baskets",
             'D': "Stock dividends",
-            'M': "Others (miscellaneous)",
+            'M': "Others",
         },
         'M': {
             'C': "Combined instruments",
@@ -156,7 +156,7 @@ ATTRIBUTE_MAP = {
                     'B': 'Bearer',
                     'R': 'Registered',
                     'N': 'Bearer/Registered',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
@@ -201,7 +201,7 @@ ATTRIBUTE_MAP = {
                     'B': 'Bearer',
                     'R': 'Registered',
                     'N': 'Bearer/Registered',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
@@ -236,7 +236,7 @@ ATTRIBUTE_MAP = {
                     'B': 'Bearer',
                     'R': 'Registered',
                     'N': 'Bearer/Registered',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
@@ -281,7 +281,7 @@ ATTRIBUTE_MAP = {
                     'B': 'Bearer',
                     'R': 'Registered',
                     'N': 'Bearer/Registered',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
@@ -316,7 +316,7 @@ ATTRIBUTE_MAP = {
                     'B': 'Bearer',
                     'R': 'Registered',
                     'N': 'Bearer/Registered',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
@@ -361,7 +361,7 @@ ATTRIBUTE_MAP = {
                     'B': 'Bearer',
                     'R': 'Registered',
                     'N': 'Bearer/Registered',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
@@ -374,7 +374,7 @@ ATTRIBUTE_MAP = {
                     'C': 'Bonus Certificate',
                     'D': 'Outperformance Bonus Certificate',
                     'E': 'Twin-Win-Certificate',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
             {
@@ -382,7 +382,7 @@ ATTRIBUTE_MAP = {
                 "mapping": {
                     'D': 'Dividend Payments',
                     'Y': 'No Payments',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
             {
@@ -391,7 +391,7 @@ ATTRIBUTE_MAP = {
                     'F': 'Cash Repayment',
                     'V': 'Physical Repayment',
                     'E': 'Elect at Settlement',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
             {
@@ -405,11 +405,11 @@ ATTRIBUTE_MAP = {
                     'C': 'Currencies',
                     'I': 'Indices',
                     'N': 'Interest Rates',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
-        ('E', 'M'): [  # Group EM: Others (miscellaneous)
+        ('E', 'M'): [  # Group EM: Others
             {
                 "name": "na_1",
                 "mapping": {
@@ -434,7 +434,7 @@ ATTRIBUTE_MAP = {
                     'B': 'Bearer',
                     'R': 'Registered',
                     'N': 'Bearer/Registered',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
         ],
@@ -446,7 +446,7 @@ ATTRIBUTE_MAP = {
                 "mapping": {
                     'O': 'Open-End',
                     'C': 'Closed-End',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
             {
@@ -521,7 +521,7 @@ ATTRIBUTE_MAP = {
                 "mapping": {
                     'O': 'Open-End',
                     'C': 'Closed-End',
-                    'M': 'Others (Miscellaneous)'
+                    'M': 'Others'
                 }
             },
             {
@@ -554,7 +554,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'O': 'Open-End',
             'C': 'Closed-End',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -594,7 +594,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'O': 'Open-End',
             'C': 'Closed-End',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -611,7 +611,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'R': 'Defined Benefit',
             'B': 'Defined Contribution',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -628,7 +628,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'O': 'Open-End',
             'C': 'Closed-End',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -647,7 +647,7 @@ ATTRIBUTE_MAP = {
             'B': 'REIT',
             'E': 'ETF',
             'P': 'Private Equity Funds',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -666,7 +666,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'O': 'Open-End',
             'C': 'Closed-End',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -702,7 +702,7 @@ ATTRIBUTE_MAP = {
         }
     },
 ],
-        ('C', 'M'): [  # Group CM: Others (miscellaneous)
+        ('C', 'M'): [  # Group CM: Others
     {
         "name": "na_1",
         "mapping": {
@@ -781,7 +781,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -833,7 +833,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -885,7 +885,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -937,7 +937,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -949,7 +949,7 @@ ATTRIBUTE_MAP = {
             'B': 'Capital Protection Convertible Certificate',
             'C': 'Barrier Capital Protection Certificate',
             'D': 'Capital Protection Certificate with Coupons',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -980,7 +980,7 @@ ATTRIBUTE_MAP = {
             'C': 'Currencies (Specified Exchange Rate)',
             'I': 'Indices (The Performance of an Index)',
             'N': 'Interest Rates',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -993,7 +993,7 @@ ATTRIBUTE_MAP = {
             'C': 'Reverse Convertible',
             'D': 'Barrier Reverse Convertible',
             'E': 'Express Certificate',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1013,7 +1013,7 @@ ATTRIBUTE_MAP = {
             'S': 'Repayment in Assets',
             'C': 'Repayment in Assets and Cash',
             'T': 'Repayment in Assets or Cash',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1026,7 +1026,7 @@ ATTRIBUTE_MAP = {
             'C': 'Currencies (Specified Exchange Rate)',
             'I': 'Indices (The Performance of an Index)',
             'N': 'Interest Rates',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1077,7 +1077,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1128,7 +1128,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1179,7 +1179,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1195,7 +1195,7 @@ ATTRIBUTE_MAP = {
             'G': 'Mortgage-Backed Securities',
             'Q': 'Asset-Backed Securities',
             'N': 'Municipal Bonds',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1240,13 +1240,13 @@ ATTRIBUTE_MAP = {
         }
     },
 ],
-        ('D', 'M'): [  # Group DM: Other (miscellaneous)
+        ('D', 'M'): [  # Group DM: Other
     {
         "name": "type",
         "mapping": {
             'B': 'Bank Loan',
             'P': 'Promissory Note',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1267,7 +1267,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1308,7 +1308,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1338,7 +1338,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1352,7 +1352,7 @@ ATTRIBUTE_MAP = {
             'F': 'Preferred/Preference Convertible Shares',
             'B': 'Bonds',
             'I': 'Combined Instruments',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1373,7 +1373,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1387,7 +1387,7 @@ ATTRIBUTE_MAP = {
             'F': 'Preferred/Preference Convertible Shares',
             'B': 'Bonds',
             'I': 'Combined Instruments',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1408,7 +1408,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1422,7 +1422,7 @@ ATTRIBUTE_MAP = {
             'T': 'Commodities',
             'C': 'Currencies',
             'I': 'Indices',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1447,7 +1447,7 @@ ATTRIBUTE_MAP = {
             'A': 'American',
             'E': 'European',
             'B': 'Bermudan',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1461,7 +1461,7 @@ ATTRIBUTE_MAP = {
             'T': 'Commodities',
             'C': 'Currencies',
             'I': 'Indices',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1486,7 +1486,7 @@ ATTRIBUTE_MAP = {
             'A': 'American',
             'E': 'European',
             'B': 'Bermudan',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -1498,7 +1498,7 @@ ATTRIBUTE_MAP = {
             'S': 'Subscription Rights',
             'P': 'Purchase Rights',
             'W': 'Warrants',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1519,11 +1519,11 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
-        ('R', 'M'): [  # Group RM: Other (miscellaneous)
+        ('R', 'M'): [  # Group RM: Other
     {
         "name": "na_1",
         "mapping": {
@@ -1572,7 +1572,7 @@ ATTRIBUTE_MAP = {
             'F': 'Futures',
             'W': 'Swaps',
             'N': 'Interest Rates',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1614,7 +1614,7 @@ ATTRIBUTE_MAP = {
             'F': 'Futures',
             'W': 'Swaps',
             'N': 'Interest Rates',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1634,7 +1634,7 @@ ATTRIBUTE_MAP = {
         }
     },
 ],
-        ('O', 'M'): [  # Group OM: Other (miscellaneous)
+        ('O', 'M'): [  # Group OM: Other
     {
         "name": "na_1",
         "mapping": {
@@ -1675,7 +1675,7 @@ ATTRIBUTE_MAP = {
             'W': 'Swaps',
             'N': 'Interest Rates',
             'V': 'Stock Dividend',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1747,7 +1747,7 @@ ATTRIBUTE_MAP = {
             'G': 'Inflation rate index',
             'H': 'Overnight Index Swap (OIS)',
             'Z': 'Zero coupon',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1788,7 +1788,7 @@ ATTRIBUTE_MAP = {
             'T': 'Paper',
             'I': 'Index',
             'Q': 'Multi-Commodity',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1800,7 +1800,7 @@ ATTRIBUTE_MAP = {
             'L': 'Volatility',
             'T': 'Total return',
             'C': 'Contract for difference',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1825,7 +1825,7 @@ ATTRIBUTE_MAP = {
             'S': 'Single stock',
             'I': 'Index',
             'B': 'Basket',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1837,7 +1837,7 @@ ATTRIBUTE_MAP = {
             'L': 'Volatility',
             'T': 'Total return',
             'C': 'Contract for difference',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1863,7 +1863,7 @@ ATTRIBUTE_MAP = {
             'V': 'Index tranche',
             'I': 'Index',
             'B': 'Basket',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1871,7 +1871,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'C': 'Credit default',
             'T': 'Total return',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1897,7 +1897,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'A': 'Spot-Forward swap',
             'C': 'Forward-forward swap',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1920,12 +1920,12 @@ ATTRIBUTE_MAP = {
         }
     },
 ],
-        ('S', 'M'): [  # Group SM: Other (miscellaneous)
+        ('S', 'M'): [  # Group SM: Other
     {
         "name": "underlying_assets",
         "mapping": {
             'P': 'Commercial property (or property derivative)',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1961,7 +1961,7 @@ ATTRIBUTE_MAP = {
             'O': 'Options',
             'R': 'Forwards',
             'F': 'Futures',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -1988,7 +1988,7 @@ ATTRIBUTE_MAP = {
             'G': 'Digital barrier',
             'L': 'Lookback',
             'P': 'Other path dependent',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2018,7 +2018,7 @@ ATTRIBUTE_MAP = {
             'R': 'Forwards',
             'F': 'Futures',
             'W': 'Swaps',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2045,7 +2045,7 @@ ATTRIBUTE_MAP = {
             'G': 'Digital barrier',
             'L': 'Lookback',
             'P': 'Other path dependent',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2067,7 +2067,7 @@ ATTRIBUTE_MAP = {
             'O': 'Options',
             'R': 'Forwards',
             'F': 'Futures',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2094,7 +2094,7 @@ ATTRIBUTE_MAP = {
             'G': 'Digital barrier',
             'L': 'Lookback',
             'P': 'Other path dependent',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2114,7 +2114,7 @@ ATTRIBUTE_MAP = {
             'V': 'CDS on an index tranche',
             'I': 'CDS on an index',
             'W': 'Swaps',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2141,7 +2141,7 @@ ATTRIBUTE_MAP = {
             'G': 'Digital barrier',
             'L': 'Lookback',
             'P': 'Other path dependent',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2161,7 +2161,7 @@ ATTRIBUTE_MAP = {
             'F': 'Futures',
             'T': 'Spot-Forward swap',
             'V': 'Volatility',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2188,7 +2188,7 @@ ATTRIBUTE_MAP = {
             'G': 'Digital barrier',
             'L': 'Lookback',
             'P': 'Other path dependent',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2201,12 +2201,12 @@ ATTRIBUTE_MAP = {
         }
     },
 ],
-        ('H', 'M'): [  # Group HM: Other (miscellaneous)
+        ('H', 'M'): [  # Group HM: Other
     {
         "name": "underlying_assets",
         "mapping": {
             'P': 'Commercial property (or property derivative)',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2233,7 +2233,7 @@ ATTRIBUTE_MAP = {
             'G': 'Digital barrier',
             'L': 'Lookback',
             'P': 'Other path dependent',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2285,7 +2285,7 @@ ATTRIBUTE_MAP = {
             'P': 'Polypropylene Products',
             'S': 'Fertilizer',
             'T': 'Paper',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2415,7 +2415,7 @@ ATTRIBUTE_MAP = {
         "mapping": {
             'I': 'Interest rate index',
             'O': 'Options',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2454,7 +2454,7 @@ ATTRIBUTE_MAP = {
             'P': 'Polypropylene Products',
             'S': 'Fertilizer',
             'T': 'Paper',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2636,7 +2636,7 @@ ATTRIBUTE_MAP = {
         }
     },
 ],
-        ('K', 'M'): [  # Group KM: Other (miscellaneous)
+        ('K', 'M'): [  # Group KM: Other
     {
         "name": "na_1",
         "mapping": {
@@ -2675,7 +2675,7 @@ ATTRIBUTE_MAP = {
             'P': 'Polypropylene Products',
             'S': 'Fertilizer',
             'T': 'Paper',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2745,7 +2745,7 @@ ATTRIBUTE_MAP = {
             'D': 'Certificate of deposit',
             'W': 'Warrants',
             'K': 'Money Market Instruments',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2843,7 +2843,7 @@ ATTRIBUTE_MAP = {
             'V': 'Variable',
             'F': 'Fixed',
             'R': 'Real',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2855,7 +2855,7 @@ ATTRIBUTE_MAP = {
             'Q': 'Quarterly',
             'S': 'Semi-Annually',
             'A': 'Annually',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2881,7 +2881,7 @@ ATTRIBUTE_MAP = {
             'R': 'Real Estate',
             'T': 'Commodities',
             'C': 'Currencies',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2891,7 +2891,7 @@ ATTRIBUTE_MAP = {
             'C': 'Capitalization Weighted',
             'E': 'Equal Weighted',
             'F': 'Modified Market Capitalization Weighted',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2900,7 +2900,7 @@ ATTRIBUTE_MAP = {
             'P': 'Price Return',
             'N': 'Net Total Return',
             'G': 'Gross Total Return',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2920,7 +2920,7 @@ ATTRIBUTE_MAP = {
             'I': 'Indices',
             'T': 'Commodities',
             'C': 'Currencies',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2952,7 +2952,7 @@ ATTRIBUTE_MAP = {
             'F': 'Preferred/Preference Convertible Shares',
             'L': 'Limited Partnership Units',
             'K': 'Collective Investment Vehicles',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -2974,7 +2974,7 @@ ATTRIBUTE_MAP = {
         }
     },
 ],
-        ('T', 'M'): [  # Group TM: Others (miscellaneous)
+        ('T', 'M'): [  # Group TM: Others
     {
         "name": "na_1",
         "mapping": {
@@ -3011,7 +3011,7 @@ ATTRIBUTE_MAP = {
             'A': 'Share and Warrant',
             'W': 'Warrant and Warrant',
             'U': 'Fund Unit and Other Components',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
@@ -3033,7 +3033,7 @@ ATTRIBUTE_MAP = {
             'B': 'Bearer',
             'R': 'Registered',
             'N': 'Bearer/Registered',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
 ],
@@ -3048,7 +3048,7 @@ ATTRIBUTE_MAP = {
             'N': 'Carbon Credit',
             'P': 'Precious Metal Receipts',
             'S': 'Other OTC Derivative Products',
-            'M': 'Others (Miscellaneous)'
+            'M': 'Others'
         }
     },
     {
