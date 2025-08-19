@@ -1,3 +1,2 @@
-from .decoder import Decoder
-
+from .decorder import Decoder
 __all__ = ["Decoder"]
