@@ -1,34 +1,12 @@
-from map import CATEGORY_MAP, GROUP_MAP, ATTRIBUTE_MAP
+from src.cfi_code_parser.map import CATEGORY_MAP, GROUP_MAP, ATTRIBUTE_MAP
 
 class Decoder:
-    """
-    A full CFI code decoder based on ISO 10962.
-    The CFI (Classification of Financial Instruments) code consists of 6 characters,
-    where the first two characters represent the Category and Group, and the remaining
-    four are additional attributes.
-    """
     
     CATEGORY_MAP = CATEGORY_MAP
     GROUP_MAP = GROUP_MAP
     ATTRIBUTE_MAP = ATTRIBUTE_MAP
     
     def decode(self, cfi_code: str, show_options: bool = False) -> dict:
-        """
-        Decodes a 6-character CFI code into its descriptive components.
-        
-        Parameters:
-            cfi_code (str): A 6-character CFI code.
-            show_options (bool): Flag to indicate whether to include options in the attributes.
-        
-        Returns:
-            dict: A dictionary containing the decoded attributes:
-                  - category: Description from the first character.
-                  - group: Description from the second character based on the category.
-                  Additional attributes may be decoded if mappings are provided for the specific (category, group).
-        
-        Raises:
-            ValueError: If the provided CFI code is not exactly 6 characters long.
-        """
         
         if not cfi_code or len(cfi_code) != 6:
             raise ValueError("CFI code must be exactly 6 characters long.")
