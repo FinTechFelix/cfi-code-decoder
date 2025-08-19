@@ -12,7 +12,7 @@ class Decoder:
     GROUP_MAP = GROUP_MAP
     ATTRIBUTE_MAP = ATTRIBUTE_MAP
     
-    def decode(self, cfi_code: str, show_options: bool = True) -> dict:
+    def decode(self, cfi_code: str, show_options: bool = False) -> dict:
         """
         Decodes a 6-character CFI code into its descriptive components.
         
@@ -29,8 +29,12 @@ class Decoder:
         Raises:
             ValueError: If the provided CFI code is not exactly 6 characters long.
         """
+        
         if not cfi_code or len(cfi_code) != 6:
             raise ValueError("CFI code must be exactly 6 characters long.")
+        
+        if not isinstance(cfi_code,str):
+            raise ValueError("CFI code must be of type str.")
         
         cfi_code = cfi_code.upper()
         category_letter = cfi_code[0]
@@ -76,11 +80,5 @@ class Decoder:
 
 if __name__ == "__main__":
     cfi_decoder = Decoder()
-    cfi_codes = [  
-    "DBFUFB",  
-    "CEEQRS"  
-    ]
-
-   
-    for cfi_code in cfi_codes: 
-        print(cfi_decoder.decode(cfi_code.lower()))
+    
+    print(cfi_decoder.decode("CIOIMS"))
