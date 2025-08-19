@@ -1,4 +1,4 @@
-from src.cfi_code_parser.map import CATEGORY_MAP, GROUP_MAP, ATTRIBUTE_MAP
+from .map import CATEGORY_MAP, GROUP_MAP, ATTRIBUTE_MAP
 
 class Decoder:
     
