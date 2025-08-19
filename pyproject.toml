@@ -1,7 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
 [project]
-name = "cfi-code-parser"
+name = "cfi-code-decoder"
 version = "0.1.0"
-description = "Add your description here"
+description = "Decode ISO 10962 CFI codes"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "FinTechFelix" }]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/FinTechFelix/cfi-code-decoder"
+
+# IMPORTANT: include the src package in the wheel
+[tool.hatch.build.targets.wheel]
+packages = ["src/cfi_code_parser"]
