@@ -59,4 +59,4 @@ class Decoder:
 if __name__ == "__main__":
     cfi_decoder = Decoder()
     
-    print(cfi_decoder.decode("CIOIMS"))
+    print(cfi_decoder.decode("RWSNCA"))
