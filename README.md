@@ -29,12 +29,13 @@ If a detailed mapping for a category/group is not available, the raw character v
 ## ✅ Example Usage
 
 ```python
-from cfi_code import Decoder
+from cfi_code_decoder import Decoder
 
 decoder = Decoder()
 
-result = decoder.decode("ESVUFR")
-print(result)
+print(decoder.decode("ESVUFR"))
+print(decoder.decode("RWSNCA"))
+
 ```
 
 ## ➡️ Example Output
@@ -65,4 +66,32 @@ print(result)
     }
   ]
 }
+
+{
+   "category":"entitlements",
+   "group":"warrants",
+   "attributes":[
+      {
+         "position":3,
+         "name":"underlying_assets",
+         "value":"equities"
+      },
+      {
+         "position":4,
+         "name":"type",
+         "value":"naked warrants"
+      },
+      {
+         "position":5,
+         "name":"call_put",
+         "value":"call"
+      },
+      {
+         "position":6,
+         "name":"exercise_option_style",
+         "value":"american"
+      }
+   ]
+}
+
 ```
