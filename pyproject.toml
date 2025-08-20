@@ -15,8 +15,13 @@ dependencies = []
 [project.urls]
 Homepage = "https://github.com/FinTechFelix/cfi-code-decoder"
 
+<<<<<<< HEAD
 [project]
 name = "cfi-code-parser"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/cfi_code_decoder"]
+=======
+[tool.hatch.build.targets.wheel]
+packages = ["src/cfi_code_decoder"]
+>>>>>>> 781844e53d32d57ff9708b95a33d27fa11318628
